@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-size: 4.5rem;
+}
+
+h5 {
+    font-size: 2.25rem;
+    font-family: "Roboto Slab", serif;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: .5rem;
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: italic;
+    font-family: "Roboto Slab", serif;
+    color: #6c757d;
+}
+
+h4 {
+    font-size: calc(1.275rem + 0.3vw);
+}
+
+p {
+    color: #6c757d;
+    line-height: 1.75;
+}
+
+button {
+    padding: 1.25rem 2.5rem;
+    border-radius: 8px;
+    background-color: #ffc800;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.125rem;
+    border: none;
+    outline: none;
+}
+
+button.faded {
+    background-color: #B18F0E;
+    color: #BEC0C1;
+}
+
+section {
+    padding: 6rem 4rem;
+}
+
+.accounts {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.accounts i {
+    font-size: 1.2rem;
+    background-color: #212529;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: .5rem;
+}
+
+.accounts i:hover {
+    background-color: #373b3e;
+}
+
+nav {
+    background-color: #212529;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem;
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+}
+
+.logo img {
+    width: 180px;
+    margin-bottom: -8px;
+}
+
+.menu {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.menu li a {
+    color: white;
+    transition: color 0.2s ease;
+}
+
+.menu li a:hover {
+    color: #ffc800;
+}
+
+header {
+    text-align: center;
+    color: white;
+    background: url('../img/others/header-bg.jpg');
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.services {
+    text-align: center;
+}
+
+.services .cards {
+    display: flex;
+    margin-top: 2rem;
+    gap: 2rem;
+}
+
+.services .card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+}
+
+.services .cards .icon {
+    color: white;
+    background-color: #ffc800;
+    height: 80px;
+    width: 80px;
+    font-size: 2.5rem;
+    line-height: 80px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.portfoilo {
+    background-color: #F8F9FA;
+    text-align: center;
+}
+
+.portfoilo .cards {
+    flex-direction: column;
+    margin: 2rem 0;
+}
+
+.portfoilo .cards,
+.portfoilo .cards>div {
+    display: flex;
+    gap: 2rem;
+}
+
+.portfoilo .cards .card {
+    background-color: #fff;
+}
+
+.portfoilo .cards .card h4 {
+    margin-top: 1rem;
+}
+
+.portfoilo .cards .card p {
+    margin-bottom: 2rem;
+}
+
+.portfoilo .cards>div img {
+    width: 100%;
+}
+
+.portfoilo .card>div {
+    position: relative;
+}
+
+.portfoilo .card>div:hover::after {
+    opacity: 1;
+}
+
+.portfoilo .card>div::after {
+    content: '+';
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 200, 0, 0.9);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    color: white;
+    opacity: 0;
+    transition: opacity .2s linear;
+    cursor: pointer;
+}
+
+.about {
+    text-align: center;
+}
+
+.about h4 {
+    margin-bottom: 1rem;
+}
+
+.about .items-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 4rem 0 0;
+    gap: 4rem;
+    position: relative;
+}
+
+.about .items-container::after {
+    content: '';
+    height: 100%;
+    width: 2px;
+    position: absolute;
+    background-color: #e9ecef;
+    left: 50%;
+    z-index: 1;
+}
+
+.about .items-container>div {
+    width: 50%;
+    display: flex;
+    gap: 2rem;
+    z-index: 5;
+    position: relative;
+}
+
+.about .items-container>div img,
+.last-yellow-content {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 7px solid #e9ecef;
+}
+
+.last-yellow-content {
+    background-color: #ffc800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.last-yellow-content h4 {
+    color: white;
+    font-size: 13px;
+    padding: 1.2rem;
+}
+
+.about .items-container>div:nth-child(odd) {
+    text-align: right;
+    flex-direction: row-reverse;
+    transform: translateX(49px);
+}
+
+.about .items-container>div:nth-child(even) {
+    text-align: left;
+    align-self: flex-end;
+    transform: translateX(-49px);
+}
+
+/* .team h2 h3 members member h4 p accounts i */
+.team {
+    text-align: center;
+    background-color: #F8F9FA;
+}
+
+.team .members {
+    display: flex;
+    gap: 2rem;
+    margin: 4rem 0;
+    justify-content: space-between;
+}
+
+.team img {
+    width: 14rem;
+    height: 14rem;
+    border-radius: 50%;
+    border: 7px solid #e9ecef;
+}
+
+.team p:last-child {
+    width: 80%;
+    margin: auto;
+}
+
+.networks {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem 4rem;
+}
+
+.networks img {
+    width: 20%;
+    height: 3rem;
+}
+
+.contact {
+    background: url('../img/others/map-image.png') 0 0 no-repeat;
+    background-size: cover;
+    background-color: #212529;
+    width: 100%;
+    text-align: center;
+}
+
+.contact h2 {
+    color: #fff;
+}
+
+.contact form {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    margin: 3rem 0;
+}
+
+input {
+    padding: 1rem;
+    border-radius: 7px;
+    width: 100% !important;
+}
+
+.contact .left {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.contact div {
+    width: 100%;
+}
+
+.right input {
+    height: 100%;
+}
+
+.right input::placeholder {
+    transform: translateY(-400%);
+}
+
+footer {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 4rem;
+}
